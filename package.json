@@ -1,0 +1,22 @@
+{
+  "name": "capstone-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "knexfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmajor604/capstone-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmajor604/capstone-2/issues"
+  },
+  "homepage": "https://github.com/nmajor604/capstone-2#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
