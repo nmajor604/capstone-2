@@ -10,7 +10,29 @@ module.exports = [
         is_sold: '0'
 
     },
-   
+    {
+        id: 2,
+        price: '400',
+        item_name: 'Apple Watch',
+        item_title: 'Time To Upgrade',
+        item_description: 'Bought in 2018',
+        is_firm: '1',
+        item_neighbourhood: 'West End',
+        is_sold: '0'
+
+    },
+    {
+        id: 3,
+        price: '500',
+        item_name: 'Indigo Soapstone Bookends',
+        item_title: 'Time To Upgrade',
+        item_description: 'Bought in 2012',
+        is_firm: '1',
+        item_neighbourhood: 'Sunrise',
+        is_sold: '0'
+
+    }
+    
 
 ];
 
