@@ -8,6 +8,7 @@ router
 
 router
     .route('/:id')
-    .get(listingsController.singleListing);
+    .get(listingsController.singleListing)
+    .patch(listingsController.updateListings);
 
 module.exports = router;

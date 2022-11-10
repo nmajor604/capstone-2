@@ -38,3 +38,15 @@ exports.addListing = (req, res) => {
     })
     .catch((err) => res.status(400).send(`Error creating Listing: ${err}`));
 };
+
+exports.updateListings = (req, res) => {
+  knex('listings')
+    .update(req.body)
+    .where({ id: req.params.id })
+    .then(() => {
+      res.status(200).send(`Listing with id: ${req.params.id} has been updated`);
+    })
+    .catch((err) =>
+      res.status(400).send(`Error updated Listing ${req.params.id} ${err}`)
+      );
+};
