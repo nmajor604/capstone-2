@@ -9,6 +9,7 @@ router
 router
     .route('/:id')
     .get(listingsController.singleListing)
-    .patch(listingsController.updateListings);
+    .patch(listingsController.updateListing)
+    .delete(listingsController.deleteListing);
 
 module.exports = router;

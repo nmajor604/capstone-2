@@ -39,7 +39,7 @@ exports.addListing = (req, res) => {
     .catch((err) => res.status(400).send(`Error creating Listing: ${err}`));
 };
 
-exports.updateListings = (req, res) => {
+exports.updateListing = (req, res) => {
   knex('listings')
     .update(req.body)
     .where({ id: req.params.id })
@@ -49,4 +49,16 @@ exports.updateListings = (req, res) => {
     .catch((err) =>
       res.status(400).send(`Error updated Listing ${req.params.id} ${err}`)
       );
+};
+
+exports.deleteListing = (req, res) => {
+  knex('listings')
+    .delete()
+    .where({ id: req.params.id })
+    .then(() => {
+      res.status(204).send(`Listing with id: ${req.params.id} has been deleted`);
+    })
+    .catch((err) => 
+    res.status(400).send(`Error deleting listing ${req.params.id} ${err}`)
+    );
 };
