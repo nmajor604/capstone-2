@@ -11,6 +11,12 @@ app.use(cors());
 
 app.use('/', listingsRoutes);
 
+app.use('/login', (req, res) => {
+    res.send({
+      token: 'testingtesting123'
+    });
+  });
+
 app.listen(PORT, () => {
     console.log(`running at http://localhost:${PORT}`);
 });
