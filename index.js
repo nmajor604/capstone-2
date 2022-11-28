@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/', listingsRoutes);
-app.use('/seller-signup', sellersRoutes);
+app.use('/signup', sellersRoutes);
 
 app.use('/login', (req, res) => {
     res.send({
