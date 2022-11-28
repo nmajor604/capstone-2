@@ -2,6 +2,7 @@ const knex = require('knex')(require('../knexfile').development);
 
 exports.index = (_req, res) => {
   knex('listings')
+    .where({ is_sold: '0' })
     .then((data) => {
       res.status(200).json(data);
     })
