@@ -9,6 +9,6 @@ router
 router
     .route('/:id')
     .get(sellersController.singleSeller)
-    // .delete(sellersController.deleteSeller);
+    .delete(sellersController.deleteSeller);
 
 module.exports = router;

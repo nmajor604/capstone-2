@@ -39,14 +39,14 @@ exports.addSeller = (req, res) => {
     .catch((err) => res.status(400).send(`Error creating seller: ${err}`));
 };
 
-// exports.deleteSeller = (req, res) => {
-//   knex('sellers')
-//     .delete()
-//     .where({ id: req.params.id })
-//     .then(() => {
-//       res.status(204).send(`Seller with id: ${req.params.id} has been deleted`);
-//     })
-//     .catch((err) => 
-//     res.status(400).send(`Error deleting seller ${req.params.id} ${err}`)
-//     );
-// };
+exports.deleteSeller = (req, res) => {
+  knex('sellers')
+    .delete()
+    .where({ id: req.params.id })
+    .then(() => {
+      res.status(204).send(`Seller with id: ${req.params.id} has been deleted`);
+    })
+    .catch((err) => 
+    res.status(400).send(`Error deleting seller ${req.params.id} ${err}`)
+    );
+};

@@ -10,8 +10,8 @@ const sellersRoutes = require('./routes/sellersRoute');
 app.use(express.json());
 app.use(cors());
 
-app.use('/', listingsRoutes);
-app.use('/signup', sellersRoutes);
+app.use('/listings', listingsRoutes);
+app.use('/sellers', sellersRoutes);
 
 app.use('/login', (req, res) => {
     res.send({
