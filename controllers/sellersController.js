@@ -26,7 +26,7 @@ exports.singleSeller = (req, res) => {
 };
 
 exports.addSeller = (req, res) => {
-  if (!req.body.seller || !req.body.pwd ) {
+  if (!req.body.seller || !req.body.password ) {
     return res.status(400).send('Please fill in all fields.');
   }
 
