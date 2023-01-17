@@ -9,7 +9,7 @@ module.exports = [
         item_description: 'Bought in 2008, new strings added in 2020, hardly played',
         is_firm: '0',
         item_neighbourhood: 'Yaletown',
-        is_sold: '0'
+        is_sold: '1'
 
     },
     {
