@@ -1,3 +1,8 @@
+/*
+Initial listings data
+*/
+
+
 module.exports = [
     {
         id: 1,

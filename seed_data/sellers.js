@@ -1,3 +1,7 @@
+/*
+Initial sellers data
+*/
+
 module.exports = [
     {
       id: 1,
